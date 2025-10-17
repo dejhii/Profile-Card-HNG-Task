@@ -13,7 +13,7 @@ The **Profile Card Component** displays essential user details such as **name**,
 ---
 
 ## 🔗 Live Demo  
-👉 [View Live Demo](https://your-demo-link-here.netlify.app/)  
+👉 [View Live Demo](https://github.com/dejhii/Profile-Card-HNG-Task.git)  
 
 *(Click the link above to see the project in action.)*
 
