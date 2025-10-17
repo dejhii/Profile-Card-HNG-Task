@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <!-- Profile Card Root -->
+      <article
+        data-testid="test-profile-card"
+        class="profile-card"
+        aria-label="User Profile Card"
+      >
+        <header class="profile-header">
+          <figure class="profile-avatar">
+            <img
+              src="img/avatar.png"
+              alt="User avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+          <div class="profile-info">
+            <h2 data-testid="test-user-name">Aderibigbe Lateef Adedeji</h2>
+            <h3 data-testid="test-user-profession">Frontend Developer</h3>
+            <p data-testid="test-user-bio">
+              I'm a frontend developer passionate about crafting intuitive,
+              responsive, and visually engaging web experiences. With a strong
+              foundation in HTML, CSS, JavaScript, and frameworks like React, I
+              bring designs to life and ensure seamless user interactions across
+              devices.
+            </p>
+          </div>
+        </header>
+
+        <div class="time-box">
+          <h4>Current Time (ms)</h4>
+          <span data-testid="test-user-time" id="userTime"></span>
+        </div>
+
+        <nav
+          aria-label="Social Links"
+          data-testid="test-user-social-links"
+          class="social-links"
+        >
+          <h3>Connect with Me</h3>
+          <ul>
+            <li>
+              <a
+                href="https://x.com/dejhii_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Twitter Profile"
+                data-testid="test-user-social-twitter"
+              >
+                <img src="img/x.png" alt="x icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dejhii"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit GitHub Profile"
+                data-testid="test-user-social-github"
+              >
+                <img src="img/git.png" alt="github icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit LinkedIn Profile"
+                data-testid="test-user-social-linkedin"
+              >
+                <img src="img/link.png" alt="linkedin icon" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies" aria-label="User Hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Reading Books</li>
+            <li>Listening to Music</li>
+            <li>Coding</li>
+            <li>Watching Movies</li>
+            <li>Learnig New Things</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes" aria-label="User Dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Debugging</li>
+            <li>Misinformation</li>
+            <li>Dishonesty</li>
+            <li>Traffic</li>
+            <li>Slow Internet</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      // Set current time in milliseconds
+      const userTime = document.getElementById("userTime");
+      if (userTime) {
+        const updateTime = () => {
+          userTime.textContent = Date.now();
+        };
+        updateTime();
+        //Update every second
+        setInterval(updateTime, 1000);
+      }
+    </script>
+  </body>
+</html>
