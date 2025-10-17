@@ -13,7 +13,7 @@ The **Profile Card Component** displays essential user details such as **name**,
 ---
 
 ## 🔗 Live Demo  
-👉 [View Live Demo](https://github.com/dejhii/Profile-Card-HNG-Task.git)  
+👉 [View Live Demo](https://dejhii.github.io/Profile-Card-HNG-Task/)  
 
 *(Click the link above to see the project in action.)*
 
